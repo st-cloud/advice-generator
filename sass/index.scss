@@ -1,0 +1,105 @@
+// To compile SCSS files: npm run scss
+// Gulp instructions: https://jhinter.medium.com/setting-up-gulp-to-compile-scss-in-less-than-5-minutes-fee8bea2b68b
+// ASCII banners: https://manytools.org/hacker-tools/ascii-banner/ ANSI Shadow
+
+/*
+========= Variables =========
+*/
+
+// Colors
+
+$swatch-cyan: hsl(193, 38%, 86%);
+$swatch-neon: hsl(150, 100%, 66%);
+$swatch-gray-blue: hsl(217, 19%, 38%);
+$swatch-dark-gray-blue: hsl(217, 19%, 24%);
+$swatch-dark-blue: hsl(217, 19%, 24%);
+
+// Typography
+
+$font-family: 'Manrope', sans-serif;
+$font-size--body: 28px;
+$font-size--header: 1.5rem;
+
+/*
+========= Global =========
+*/
+
+// Typography
+
+body {
+    font-family: $font-family;
+    font-size: $font-size--body;
+    color: white;
+    background-color: $swatch-dark-blue;
+    text-align: center;
+}
+
+// h1, h2 {
+// font-family: $font-header;
+// font-size: $size-header;
+// }
+
+// // Images
+// img {
+// max-width: 100%;
+// height: auto;
+// }
+
+@media screen and (min-width: 375px) {
+    // desktop styles
+}
+
+/*
+========= Components =========
+*/
+
+//--- Card ---//
+
+.card {
+    background-color: $swatch-gray-blue;
+    border-radius: .6rem;
+    margin: 10rem .5rem 0;
+    padding: 1rem 1rem 3rem;
+}
+
+.title {
+    color: $swatch-neon;
+    font-size: .7rem;
+    letter-spacing: .3em;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+//--- Button ---//
+
+.btn {
+    background: $swatch-neon;
+    transform: translateY(-50%);
+}
+
+//--- Footer ---//
+
+.footer {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.footer_attribution {
+    text-align: center;
+    font-size: .7rem;
+}
+
+/*
+========= Utilities =========
+*/
+
+.utl-visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px 0 0 -1px;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}
