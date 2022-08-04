@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" media="all" href="./css/index.css">
+  <link rel="stylesheet" media="all" href="./dist/custom.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Advice generator app</title>
 
@@ -17,29 +20,33 @@
 <body>
   <main>
     <!-- Card -->
-    <div class="idnumber">
-      Advice #
-    </div>
-    <blockquote class="advice">
-      ""
-    </blockquote>
-    <div>
-      <img src="./images/pattern-divider-mobile.svg"/>
+    <div class="card">
+      <h1 class="title">
+        Advice #
+      </h1>
+
+      <blockquote class="description">
+        Roll the die for your advice!
+      </blockquote>
+
+      <img class="divider" src="./images/pattern-divider-mobile.svg"/>
     </div>
 
     <!-- Button -->
-    <button>
+    <button class="btn">
+      <span class="utl-visually-hidden">Die</span>
       <img src="./images/icon-dice.svg"/>
     </button>
-
-    <!-- Attribution -->
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="#">Grace Brown</a>.
-      </div>
-    </footer>
   </main>
+
+  <!-- Attribution -->
+  <footer class="footer">
+    <p class="footer_attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/st-cloud">Grace Brown</a>.
+    </p>
+  </footer>
+
   <script src="./scripts/main.js"></script>
 </body>
 </html>
