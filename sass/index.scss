@@ -54,11 +54,11 @@ body {
 */
 
 //--- Card ---//
-
 .card {
     background-color: $swatch-gray-blue;
     border-radius: .6rem;
     margin: 10rem .5rem 0;
+    min-height: 20rem;
     padding: 1rem 1rem 3rem;
 }
 
@@ -71,14 +71,12 @@ body {
 }
 
 //--- Button ---//
-
 .btn {
     background: $swatch-neon;
     transform: translateY(-50%);
 }
 
 //--- Footer ---//
-
 .footer {
     position: absolute;
     bottom: 1rem;
