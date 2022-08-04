@@ -30,6 +30,9 @@ body {
 
 .btn {
   background: #52ffa8;
+  border: none;
+  border-radius: 3.5rem;
+  padding: 1rem;
   transform: translateY(-50%); }
 
 .footer {

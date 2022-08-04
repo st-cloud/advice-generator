@@ -73,6 +73,9 @@ body {
 //--- Button ---//
 .btn {
     background: $swatch-neon;
+    border: none;
+    border-radius: 3.5rem;
+    padding: 1rem;
     transform: translateY(-50%);
 }
 
